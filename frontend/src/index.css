@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Stormlight";   
+  src: local("Stormlight"),
+    url("./fonts/stormlight/Stormlight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";   
+  src: local("PoppinsRegular"),
+    url("./fonts/PoppinsRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsBold";   
+  src: local("Poppins"),
+    url("./fonts/Poppins.ttf") format("truetype");
+}

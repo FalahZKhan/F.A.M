@@ -1,0 +1,22 @@
+digraph Tree {
+bgcolor="transparent";
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Hour &le; 20.5<br/>Decision based on<br/>Number of cases = 4254<br/>Outcome: 3714 OFF, 540 ON<br/>class = OFF>, fillcolor="#e99356"] ;
+1 [label=<Temperature &le; 26.042<br/>Decision based on<br/>Number of cases = 3723<br/>Outcome: 3714 OFF, 9 ON<br/>class = OFF>, fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True" color="white" fontcolor="white"] ;
+2 [label=<Decision based on<br/>Number of cases = 3644<br/>Outcome: 3644 OFF, 0 ON<br/>class = OFF>, fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label=<Hour &le; 17.5<br/>Decision based on<br/>Number of cases = 79<br/>Outcome: 70 OFF, 9 ON<br/>class = OFF>, fillcolor="#e89152"] ;
+1 -> 3 ;
+4 [label=<Decision based on<br/>Number of cases = 65<br/>Outcome: 65 OFF, 0 ON<br/>class = OFF>, fillcolor="#e58139"] ;
+3 -> 4 ;
+5 [label=<Humidity &le; 31.666<br/>Decision based on<br/>Number of cases = 14<br/>Outcome: 5 OFF, 9 ON<br/>class = ON>, fillcolor="#a7d3f3"] ;
+3 -> 5 ;
+6 [label=<Decision based on<br/>Number of cases = 5<br/>Outcome: 5 OFF, 0 ON<br/>class = OFF>, fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label=<Decision based on<br/>Number of cases = 9<br/>Outcome: 0 OFF, 9 ON<br/>class = ON>, fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label=<Decision based on<br/>Number of cases = 531<br/>Outcome: 0 OFF, 531 ON<br/>class = ON>, fillcolor="#399de5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False" color="white" fontcolor="white"] ;
+}

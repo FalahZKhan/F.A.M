@@ -1,0 +1,6 @@
+digraph Tree {
+bgcolor="transparent";
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Decision based on<br/>Number of cases = 4254<br/>value = 1.0>, fillcolor="#ffffff"] ;
+}

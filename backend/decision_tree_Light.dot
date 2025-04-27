@@ -1,0 +1,14 @@
+digraph Tree {
+bgcolor="transparent";
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Hour &le; 6.5<br/>Decision based on<br/>Number of cases = 4254<br/>Outcome: 1947 OFF, 2307 ON<br/>class = ON>, fillcolor="#e0f0fb"] ;
+1 [label=<Decision based on<br/>Number of cases = 1245<br/>Outcome: 0 OFF, 1245 ON<br/>class = ON>, fillcolor="#399de5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True" color="white" fontcolor="white"] ;
+2 [label=<Hour &le; 17.5<br/>Decision based on<br/>Number of cases = 3009<br/>Outcome: 1947 OFF, 1062 ON<br/>class = OFF>, fillcolor="#f3c6a5"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False" color="white" fontcolor="white"] ;
+3 [label=<Decision based on<br/>Number of cases = 1947<br/>Outcome: 1947 OFF, 0 ON<br/>class = OFF>, fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label=<Decision based on<br/>Number of cases = 1062<br/>Outcome: 0 OFF, 1062 ON<br/>class = ON>, fillcolor="#399de5"] ;
+2 -> 4 ;
+}
