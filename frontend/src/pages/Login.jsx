@@ -95,10 +95,10 @@ const Login = () => {
     };
 
     return (
-        <div className="w-screen h-screen flex flex-col md:flex-row bg-gradient-to-br from-[#07070f] via-[#141230] to-[#3c2d50] overflow-hidden">
+        <div className="w-screen h-screen flex flex-col md:flex-row bg-gradient-to-br from-[#fed8ff] via-[#ff8df6] to-[#d67dff] overflow-hidden">
             {/* Left Side - Electric Image */}
             <div
-                className="md:w-1/2 w-full h-1/3 md:h-full bg-cover bg-center"
+                className="md:w-3/4 w-full h-1/3 md:h-full bg-cover bg-center"
                 style={{ backgroundImage: `url(${login_bg})` }}
             />
 
@@ -108,7 +108,7 @@ const Login = () => {
                     <h1 className="text-6xl mb-6 text-center text-purple-400 tracking-wider drop-shadow-md" style={{ fontFamily: 'StormLight' }}>
                         F.A.M.
                     </h1>
-                    <h2 className="text-4xl mb-6 text-center text-purple-400 tracking-wider drop-shadow-md">
+                    <h2 className="text-4xl text-center text-purple-400 tracking-tighter drop-shadow-md">
                         {isSignup ? 'Sign Up' : 'Login'}
                     </h2>
 
@@ -121,7 +121,7 @@ const Login = () => {
                     {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
                     {success && <p className="text-green-500 text-sm mb-4">{success}</p>}
 
-                    <form onSubmit={handleSubmit} className="space-y-5">
+                    <form onSubmit={handleSubmit} className="space-y-0">
                         {isSignup && (
                             <>
                                 <div>
