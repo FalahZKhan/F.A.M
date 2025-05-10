@@ -48,9 +48,6 @@ F.A.M (Fault-Aware Management) is an AI-driven energy management system for smar
 4. **MongoDB Configuration**:
    - Set up a MongoDB Atlas cluster and update the connection string in `backend/config.py`.
 
-5. **Open Mateo API**:
-   - Obtain an API key and add it to `backend/config.py`.
-
 ![WhatsApp Image 2025-05-10 at 11 59 51_43f3ee60](https://github.com/user-attachments/assets/85bb4f3e-ee63-48b4-b05e-555e1c01a220)
 
 ## User Journey
